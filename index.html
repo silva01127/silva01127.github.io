@@ -5,37 +5,71 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>pizza</title>
     <link rel="icon" href="icone.png">
+    <style>
+        .imagem {
+            height: 338.1px;
+            width: 338.1px;
+            display:flex;
+        }
+        .fundo {
+            background-image: linear-gradient(90deg, rgb(48, 184, 75), rgb(255, 255, 255), rgb(255, 0, 0, 0.76));
+        }
+        .tabela {
+            display: flex;
+            justify-content: space-between;
+            gap: 60px;
+            flex-direction: column;
+        }
+        .lista ul {
+            list-style: disc;
+             padding-left: 20px;
+              color: #777;
+             font-size: 15px;
+             width: 100%;
+        }
+        .lista li {
+            margin-bottom: 8px;
+        }
+    </style>
 </head>
-<body>
-
+<body class="fundo">
 
 
     <h3 id="numero"><p style="text-align: center;"> (19) 98452-7391 </p></h3>
     <h4 style="text-align: center;"> nosso numero aqui </h4>
 
+
     <h1><i>Bem-vindo as nossas pizzas!<br><br>
     <u>O verdadeiro sabor da Itália na sua mesa🍕😁.</u>
     </h1>
-   
-    <img src="imagem.jpg" height="500px" width="500px">
+    <div class="imagem">
+    <img src="3.jpg">
+    <img src="4.jpg">
+    <img src="2.jpg">
+    </div>
     </i>    
+
 
     <h2> aqui temos os sabores das pizzas </h2>
 
-    
+
+    <div class="tabela">
     <ul>
         <li> calabresa </li>
-        <br>
         <li> frango com catupiry </li>
-        <br>
         <li> atum </li>
-        <br>
         <li> portuguesa </li>
-        <br>
-        <li> 4 queijos </li>
     </ul>
+    <ul>
+        <li> 4 queijos </li>
+        <li> 5 queijos </li>
+        <li> fango com cheddar </li>
+        <li> peperone </li>
+    </ul>
+    </div>
     <br><br>
     <h2> aqui temos os preços </h2>
+
 
     <table  border="0" cellpadding="15" cellspacing="0">
     <tr>
@@ -66,6 +100,7 @@
     <br><br><br><br>
     <h2> com borda recheada aumenta R$15,00 </h2>
 
+
     <table border="0" cellpadding="15" cellspacing="0">
     <tr>
         <th> catupiry </th>
@@ -73,8 +108,12 @@
     </tr>
     </table>
 
+
     <i><h1><a href="contato.html" > entre em contato com a gente📱 </a></h1>
     <h3><a href="#numero"> caso tenha alguma duvida ou algo do tipo, ligue para este numero </a></h3></i>
 
+
 </body>
 </html>
+
+
