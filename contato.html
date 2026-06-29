@@ -1,342 +1,83 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 <head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>pizza</title>
-   <link rel="icon" href="icone.png">
-   <style>
-               .imagem {
-       display: flex;
-       flex-wrap: wrap;
-       width: 100%;      
-       }
-
-
-       .imagem img {
-       width: 25%;        
-       height: auto;      
-       object-fit: cover;
-       background-repeat: no-repeat;
-       overflow-x: hidden;
-       border-radius: 20px;
-       }
-       .imagem {
-        background: linear-gradient(to bottom, white, transparent);
-        -webkit-mask-image: linear-gradient(to bottom, black 85%, transparent 100%);
-        mask-image: linear-gradient(to bottom, black 85%, transparent 100%);
-        padding-bottom: 5px;
-       }
-       .fundo {
-           background-image: linear-gradient(90deg, rgb(48, 184, 75), rgb(255, 255, 255), rgb(255, 0, 0, 0.76));
-           background-attachment: local;
-           min-height: 100vh;
-           background-size: cover;
-       }
-       .fundo h1 {
-        color: rgb(212, 175, 55);
-        background-color: black;
-        margin: 0;
-        padding: 10px 0;
-       }
-
-
-       .tabela {
-           display: flex;
-           justify-content: space-between;
-           gap: 60px;
-           flex-direction: column;
-       }
-
-
-       body {
-        margin: 0;
-        padding: 0;
-       }
-
-
-       .cards {
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> cadastro </title>
+    <link rel="icon" href="contato.png">
+    <style>
+        .fundo {
+            background-image:linear-gradient(90deg, rgb(48, 184, 75), rgb(255, 255, 255), rgba(255, 0, 0, 0.76));
+            min-height: 100vh;
+            width: 100%;
+        }
+        .imagem {
+            width: 300px;
+            height: 300px;
+            display: flex;
+        }
+        .botao {
+            cursor: pointer;
+        }
+        .botao:hover {
+            background-color:black ;
+        }
+        .contato {
         display: flex;
-        flex-wrap: wrap;
-        gap: 16px;
-        padding: 20px;
-        }
-
-
-        .card {
-        background: white;
-        border-radius: 10px;
-        border: 2px solid #ccc;
-        padding: 24px 20px;
-        width: 140px;
+        gap: 40px;
+        background-color: #8b4a44;
+        padding: 40px;
+        color: white;
         display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 10px;
-        cursor: pointer;
-        transition: all 0.2s ease;
-        justify-content: center;
+        width: 100%;          
+        min-height: 300px;    
+        align-items: flex-start;
         }
-
-
-        .card:hover {
-        border-color: #c0392b;
-        box-shadow: 0 0 0 3px rgba(192,57,43,0.2);
-        transform: translateY(-4px);
-        }
-
-
-        .card img {
-        width: 100%;
-        height: 120px;
-        object-fit: cover;
-        border-radius: 8px;
-        }
-        .sabor {
-            color: rgb(212, 175, 55);
-            text-align: center;
-        }
-   </style>
+       
+    </style>
 </head>
 <body class="fundo">
-        <h1 id="inicio" style="text-align: center;">
-        <i>Bem-vindo a bella italia!
-        <br>O verdadeiro sabor da Itália na sua mesa 🍕 😁.</i>
-        </h1>
-
-
-   <div class="imagem">
-   <img src="3.avif">
-   <img src="4.jpg">
-   <img src="2.jpg">
-   <img src="1.jpg">
-   </div>  
-
-
-   <h2 class="sabor"> aqui temos os sabores das pizzas </h2>
-   <div class="cards">
-   <div class="card">
-        <img src="pizza (1).png" alt="calabresa">
-        <span>calabresa</span>
-        <span>pequena</span>
-        <span>R$40,00</span>
-   </div>
-
-
-   <div class="card">
-        <img src="pizza (1).png" alt="calabresa">
-        <span>calabresa</span>
-        <span>media</span>
-        <span>R$55,00</span>
-   </div>
-   <div class="card">
-        <img src="pizza (1).png" alt="calabresa">
-        <span>calabresa</span>
-        <span>grande</span>
-        <span>R$70,00</span>
-   </div>
-   <div class="card">
-        <img src="pizza (1).png" alt="calabresa">
-        <span>calabresa com borda de cheddar ou catupiry</span>
-        <span>pequena</span>
-        <span>R$55,00</span>
-   </div>
-   <div class="card">
-   <img src="pizza (1).png" alt="calabresa">
-        <span>calabresa com borda de cheddar ou catupiry</span>
-        <span>media</span>
-        <span>R$70,00</span>
-   </div>
-   <div class="card">
-   <img src="pizza (1).png" alt="calabresa">
-        <span>calabresa com borda de cheddar ou catupiry</span>
-        <span>grande</span>
-        <span>R$85,00</span>
-   </div>
-
-
-   <div class="cards">
-   <div class="card">
-        <img src="pizza (2).png" alt="atum">
-        <span>frango com catupiry</span>
-        <span>pequena</span>
-        <span>R$40,00</span>
-   </div>
-
-
-   <div class="card">
-        <img src="pizza (2).png" alt="atum">
-        <span>frango com catupiry</span>
-        <span>media</span>
-        <span>R$55,00</span>
-   </div>
-   <div class="card">
-        <img src="pizza (2).png" alt="atum">
-        <span>frango com catupiry</span>
-        <span>grande</span>
-        <span>R$70,00</span>
-   </div>
-   <div class="card">
-        <img src="pizza (2).png" alt="atum">
-        <span>frango com catupiry com borda de cheddar ou catupiry</span>
-        <span>pequena</span>
-        <span>R$55,00</span>
-   </div>
-   <div class="card">
-   <img src="pizza (2).png" alt="atum">
-        <span>frango com catupiry com borda de cheddar ou catupiry</span>
-        <span>media</span>
-        <span>R$70,00</span>
-   </div>
-   <div class="card">
-   <img src="pizza (2).png" alt="atum">
-        <span>frango com catupiry com borda de cheddar ou catupiry</span>
-        <span>grande</span>
-        <span>R$85,00</span>
-   </div>
+    <center>
+        <i><h2><a href="casa dos salgados.html">Clique aqui para voltar</a></h2></i>
+    <h1>formulario de contato</h1>
+    <form>
+        nome<br><br>
+        <input type="text">
+        <br><br><br>
+        contato<br><br>
+        <input type="text">
+        <br><br><br>
+        qual horario você quer receber???<br><br>
+        <input type="time">
+        <br><br><br>
+        sabor da pizza<br><br>
+        <input list="sabores" id="sabor" name="sabor">
+        <datalist id="sabores">
+        <option value="calabresa"></option>
+        <option value="frango com catupiry"></option>
+        <option value="atum"></option>
+        <option value="portuguesa"></option>
+        <option value="quatro queijos"></option>
+        </datalist>
+        <br><br><br>
+        qual dia você vai querer receber?<br><br>
+        <input type="date">
+        <br><br><br>
+        observações
+        <br><br>
+        <textarea rows="8" cols="50">
+        </textarea>
+        <br><br><br>
+        <button> ENVIAR </button>
+        <br><br><br>
+        <img src="icone.png" class="imagem">
+        </center>
+        <br><br><br>
+    </form>
    
-   <div class="cards">
-   <div class="card">
-        <img src="pizza (3).png" alt="frango com catupiry">
-        <span>atum</span>
-        <span>pequena</span>
-        <span>R$40,00</span>
-   </div>
-
-
-   <div class="card">
-        <img src="pizza (3).png" alt="frango com catupiry">
-        <span>atum</span>
-        <span>media</span>
-        <span>R$55,00</span>
-   </div>
-   <div class="card">
-        <img src="pizza (3).png" alt="frango com catupiry">
-        <span>atum</span>
-        <span>grande</span>
-        <span>R$70,00</span>
-   </div>
-   <div class="card">
-        <img src="pizza (3).png" alt="frango com catupiry">
-        <span>atum com borda de cheddar ou catupiry</span>
-        <span>pequena</span>
-        <span>R$55,00</span>
-   </div>
-   <div class="card">
-   <img src="pizza (3).png" alt="frango com catupiry">
-        <span>atum com borda de cheddar ou catupiry</span>
-        <span>media</span>
-        <span>R$70,00</span>
-   </div>
-   <div class="card">
-   <img src="pizza (3).png" alt="frango com catupiry">
-        <span>atum com borda de cheddar ou catupiry</span>
-        <span>grande</span>
-        <span>R$85,00</span>
-   </div>
-
-
-      <div class="cards">
-   <div class="card">
-        <img src="pizza (4).png" alt="portuguesa">
-        <span>portuguesa</span>
-        <span>pequena</span>
-        <span>R$40,00</span>
-   </div>
-
-
-   <div class="card">
-        <img src="pizza (4).png" alt="portuguesa">
-        <span>portuguesa</span>
-        <span>media</span>
-        <span>R$55,00</span>
-   </div>
-   <div class="card">
-        <img src="pizza (4).png" alt="portuguesa">
-        <span>portuguesa</span>
-        <span>grande</span>
-        <span>R$70,00</span>
-   </div>
-   <div class="card">
-        <img src="pizza (4).png" alt="portuguesa">
-        <span>portuguesa com borda de cheddar ou catupiry</span>
-        <span>pequena</span>
-        <span>R$55,00</span>
-   </div>
-   <div class="card">
-   <img src="pizza (4).png" alt="portuguesa">
-        <span>portuguesa com borda de cheddar ou catupiry</span>
-        <span>media</span>
-        <span>R$70,00</span>
-   </div>
-   <div class="card">
-   <img src="pizza (4).png" alt="portuguesa">
-        <span>portuguesa com borda de cheddar ou catupiry</span>
-        <span>grande</span>
-        <span>R$85,00</span>
-   </div>
-
-
-
-
-
-
-   </ul>
-   <ul>
-       <li> 4 queijos </li>
-       <li> 5 queijos </li>
-       <li> frango com cheddar </li>
-       <li> peperone </li>
-   </ul>
-   </div>
-   <br><br>
-
-
-   <h2> aqui temos os sabores e preços </h2>
-   <table  border="0" cellpadding="15" cellspacing="0">
-   <tr>
-       <th> sabores </th>
-       <th> preços </th>
-   </tr>
-   <tr>
-       <th> calabresa </th>
-       <th> R$50,00 </th>
-   </tr>
-   <tr>
-       <th> frango com catupiry</th>
-       <th> R$50,00 </th>
-   </tr>
-   <tr>
-       <th> atum </th>
-       <th> R$50,00 </th>
-   </tr>
-   <tr>
-       <th> portuguesa </th>
-       <th> R$50,00 </th>
-   </tr>
-   <tr>
-       <th> 4 queijos </th>
-       <th> R$50,00 </th>
-   </tr>
-   </table>
-   <br><br><br><br>
-
-
-   <h2> com borda recheada aumenta R$15,00 </h2>
-   <table border="0" cellpadding="15" cellspacing="0">
-   <tr>
-       <th> catupiry </th>
-       <th> cheddar </th>
-   </tr>
-   </table>
-
-
-   <i><h2><a href="contato.html" > entre em contato com a gente e faça seus pedidos aqui📱 </a></h2>
-    <a href=""
+    <div class="contato">
+        <h3> (19) 98452-7391 </h3>
+    </div>  
 </body>
 </html>
-
-
-
-
 
