@@ -41,12 +41,14 @@
            background-attachment: local;
            min-height: 100vh;
            background-size: cover;
+           background-color: black;
        }
        .fundo h1 {
         color: rgb(212, 175, 55);
-        background-color: black;
+        background-color: rgb(0, 0, 0);
         margin: 0;
         padding: 10px 0;
+        
        }
        .tabela {
            display: flex;
@@ -65,9 +67,9 @@
         padding: 20px;
         }
         .card {
-        background: white;
+        background: rgb(228, 187, 51);
         border-radius: 10px;
-        border: 2px solid #ccc;
+        border: 2px solid #000000;
         padding: 24px 20px;
         width: 140px;
         display: flex;
@@ -77,6 +79,7 @@
         cursor: pointer;
         transition: all 0.2s ease;
         justify-content: center;
+        align-items: center;
         }
         .card:hover {
         border-color: #c0392b;
@@ -93,6 +96,9 @@
             color: rgb(212, 175, 55);
             text-align: center;
         }
+        .cor {
+          color: #ccb031;
+        }
    </style>
 </head>
 <body class="fundo">
@@ -101,14 +107,12 @@
         <br>O verdadeiro sabor da Itália na sua mesa 🍕 😁.</i>
         </h1>
 
-
    <div class="imagem">
    <img src="3.avif">
    <img src="4.jpg">
    <img src="2.jpg">
    <img src="1.jpg">
    </div>  
-
 
    <h2 class="sabor"> aqui temos os sabores das pizzas </h2>
    <div class="cards">
@@ -410,47 +414,7 @@
    </div>
    <br><br>
 
-
-   <h2> aqui temos os sabores e preços </h2>
-   <table  border="0" cellpadding="15" cellspacing="0">
-   <tr>
-       <th> sabores </th>
-       <th> preços </th>
-   </tr>
-   <tr>
-       <th> calabresa </th>
-       <th> R$50,00 </th>
-   </tr>
-   <tr>
-       <th> frango com catupiry</th>
-       <th> R$50,00 </th>
-   </tr>
-   <tr>
-       <th> atum </th>
-       <th> R$50,00 </th>
-   </tr>
-   <tr>
-       <th> portuguesa </th>
-       <th> R$50,00 </th>
-   </tr>
-   <tr>
-       <th> 4 queijos </th>
-       <th> R$50,00 </th>
-   </tr>
-   </table>
-   <br><br><br><br>
-
-
-   <h2> com borda recheada aumenta R$15,00 </h2>
-   <table border="0" cellpadding="15" cellspacing="0">
-   <tr>
-       <th> catupiry </th>
-       <th> cheddar </th>
-   </tr>
-   </table>
-
-
-   <i><h2><a href="contato.html" > entre em contato com a gente e faça seus pedidos aqui📱 </a></h2>
+   <i><h2><a href="contato.html" class="color" > entre em contato com a gente e faça seus pedidos aqui📱 </a></h2>
     <a href=""
 </body>
 </html>
